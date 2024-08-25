@@ -1,2 +1,10 @@
 # Exploring Social Norm Reasoning on Language Models
 ### A project for the "Introduction to NLP" lecture, University of Bonn
+
+Social norms are crucial in understanding the underlying causes and intents of people’s actions in different real life situations, since they describe the unspoken common-sense rules about acceptable social behaviour. Incorporating these social norms into NLP models, can enhance their ability to engage more effectively with humans. However, social norms are often difficult to be understood from such models due to the ambiguity presented from the various perspectives that different groups might have regarding some situations.
+**In our work**, we leverage the SOCIAL-CHEM-101 dataset and the Social-Comments dataset to explore how a language model can capture different perspectives and moral foundations of users regardin different narratives. **Our goal** is to investigate how different language models can learn and reason about social norms with respect to a situation.
+We formulate the following research questions:
+• **RQ1**: Can language models accurately capture human social norms for a specific situation?
+• **RQ2**: How can we model and capture individual perspectives with respect to a situation?
+
+In the SOCIAL-CHEM-101 dataset, a social norm applied to a situation is modelled as a rule-of-thumb (RoT), which consists of a judgment regarding an action. Each RoT is described by further attributes. Complex situations can be associated with multiple RoTs. Therefore, to address a part of RQ1, we analysed the alignment of a situation with different RoTs. Furthermore, we explored the ability of language models to understand the applicable social norms to different situations, by learning the models to generate RoTs from situations in various contexts. In addition, to address RQ2, we trained language models to classify the possible judgement of a person in a given situation, with the intention to learn language models to better understand the intent of human behaviour.
